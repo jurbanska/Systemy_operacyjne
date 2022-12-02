@@ -1,0 +1,51 @@
+Polecenia oraz działanie:
+- pwd - wypisanie nazwę bieżącego katalogu
+- cd <nazwa_katalogu> - przejście do danego katalogu
+- ls - wypisuje zawartość bieżącego katalogu
+- cat <nazwa_pliku> - wypisuje zawartość pliku
+- cp <nazwa_pliku_lub_katalogu> - kopiowanie pliku lub katalogu
+- mv <nazwa_pliku nazwa_katalogu> - przenoszenie pliku do katalogu; mv <stara_nazwa nowa_nazwa> - zmiana nazwy pliku
+- mkdir <nazwa_katalogu> - tworzenie katalogu
+- rm <nazwa_pliku> - usuwa plik; rmdir <nazwa_katalogu> - usuwa katalog
+- touch <nazwa_pliku> - tworzy pusty plik
+- locate <nazwa_pliku> - wyszukiwanie lokalizacji pliku
+- find - pozwala na szersze wyszukiwanie z danej ścieżki: pliki, właściciele, pozwolenia, typy plików, wielkość, itd.
+- grep - wyszukiwanie plików według wzorca, który nadamy
+- df - wypisuje systemowe zużycie pamięci
+- du - (disk usage) szacunkowe zużucie pamięci przez pliki
+- head <nazwa_pliku> - wypisanie początkowej części pliku
+- tail <nazwa_pliku> - wypisanie kończowej części pliku
+- diff <nazwa_pliku1 nazwa_pliku2> - porównywanie plików linijka po linijce, pokazuje co musi być zmienione, aby pliki były identyczne
+- tar - tworzenie archiwum / rozpakowanie archiwum
+- chmod - zmiana uprawnień do katalogu/pliku: read(r)/write(w)/execute(x)
+- chown - zmiana właściciela, użytkownika lub zmiana konkretnej grupy, która ma mieć dostęp do pliku/katalogu
+- id - pozwala na znalezienie nazwy użytkownika, grupy, UID, ID bieżącego usera, jak i innych w danym serwerze
+- jobs - (foreground/background/stopped) wypisanie aktywnych procesów
+- kill - zakończenie procesu
+- ping <adres_ip> - wysyłanie ICMP echo message w celu zobaczenia czy dany host jest osiągalny
+- wget - służy do pobierania z serwera, nawet gdy użytkownik nie jest zalogowany do systemu, może działać w tlw
+- history - wypisuje historię wpisywanych komend wraz z numeracją linii
+- man - interfejs umożliwiający czytanie instrukcji systemowych
+- echo - wyświetlanie linii tekstu
+- zip - pakowanie/kompresowanie plików z rozszerzeniem .zip
+- unzip - wyświetlenie i rozpakowanie plików spakowanych jako .zip
+- hostname - pokazanie lub ustawienie nazwy systemowego hosta
+- useradd - stworzenie nowego użytkownika
+- userdel - usunięcie użytkownika
+- curl - (client URL) przekazanie danych z lub na serwer używając wspieranych protokołów (np. HTTP, FTP, IMAP, POP3, itd.)
+- exit - wychodzenie z aktualnego działania
+- finger - szczegółowe informacje o aktualnie zalogowanych użytkownikach
+- free - wyświetlenie ilości dostępnej i użytej pamięci w systemie (domyślnie w kibibajtach)
+- groups <nazwa_użytkownika> - wypisanie grup, w których jest użytkownik
+- less - powoduje wyświetlanie większego pliku ładując go część po części co powoduje szybszy dostęp do treści
+- passwd - zmienianie hasła użytkowników
+- shutdown - wtrzymanie, wyłącznie lub ponowne uruchomienie urządzenia
+- ssh - protokół używany do tworzenia bezpiecznego połączenia z serwerem (TCP/IP port 22)
+- reboot - ponowne uruchomienie urządzenia
+- sudo - dodane poprzedzając inną komendę uruchamia dany proces/komendę itd. jako administrator (po wpisaniu hasła)
+- top - wyświetlenie działających procesów w czasie rzeczywistym
+- uname - wyświetla informacje o systemie operacyjnym
+- w - pokazuje, kto jest zalogowany oraz bieżące działania tych użytkowników
+- whoami - wyświetla nazwę bieżącego użytkownika
+
+
