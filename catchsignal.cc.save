@@ -1,0 +1,75 @@
+#include <iostream>
+#include <string>
+#include <csignal>
+
+
+using namespace std;
+
+void signal(int sig_n)
+{
+	cout << "Wykryto sygnał: " << sig_n << " - " << strsignal(sig_n) << endl;
+
+}
+
+int main(){
+
+	signal(SIGINT, signal_handler);
+	signal(SIGTERM, signal_handler);
+	signal(SIGBUS, signal_handler);
+	signal(SIGILL, signal_handler);
+	signal(SIGALRM, signal_handler);
+	signal(SIGSEGV, signal_handler);
+	signal(SIGHUP, signal_handler);
+	signal(SIGQUIT, signal_handler);
+	signal(SIGTRAP, signal_handler);
+	signal(SIGCONT, signal_handler);
+	signal(SIGSTOP, signal_handler);
+
+	for(int i=0; 1; i++)
+	{
+		cout << "Waiting for signal" << endl;
+
+		switch(i){
+			case 3:
+				raise(SIGINT);
+				break;
+			case 4:
+				raise(SIGTERM);
+				break;
+			case 5:
+				raise(SIGBUS);
+				break;
+			case 6:
+				raise(SIGILL);
+				break;
+			case 7:
+				raise(SIGALRM);
+				break;
+			case 8:
+				raise(SIGSEGV);
+				break;
+			case 9:
+				raise(SIGHUP);
+				break;
+			case 10:
+				raise(SIGQUIT);
+				break;
+			case 11:
+				raise(SIGTRAP);
+				break;
+			case 12:
+				raise(SIGCONT);
+				break;
+			case 13:
+				cout << "Tego sygnału nie można przechwycić:" << endl;
+				raise(SIGSTOP);
+				break;
+			case 50:
+				exit(0);
+				break;
+		}
+
+		sleep(1);
+	}
+
+}
